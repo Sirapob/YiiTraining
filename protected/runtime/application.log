@@ -1,0 +1,158 @@
+2014/03/15 00:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create ซึ่งมีรูปแบบการแสดงผล ดังรูปที่ 4-6".' in C:\wamp\www\yiiproject\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yiiproject\framework\web\CController.php(270): CController->missingAction('create ????????...')
+#1 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(282): CController->run('create ????????...')
+#2 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('userlogin/creat...')
+#3 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YiiTraining/index.php/userlogin/create%20%E0%B8%8B%E0%B8%B6%E0%B9%88%E0%B8%87%E0%B8%A1%E0%B8%B5%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9C%E0%B8%A5%20%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%97%E0%B8%B5%E0%B9%88%204-6
+HTTP_REFERER=http://bls.buu.ac.th/~f55361/06Jul18/YiiThaiManual.pdf
+---
+2014/03/27 13:48:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiidatabase.province' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `province`.
+in C:\wamp\www\YiiTraining\index.php (13)
+2014/04/04 14:06:03 [error] [exception.CException] exception 'CException' with message 'CJuiDateTimePicker must specify "model" and "attribute" or "name" property values.' in C:\wamp\www\yiiproject\framework\zii\widgets\jui\CJuiInputWidget.php:59
+Stack trace:
+#0 C:\wamp\www\YiiTraining\protected\extensions\CJuiDateTimePicker\CJuiDateTimePicker.php(26): CJuiInputWidget->resolveNameID()
+#1 C:\wamp\www\yiiproject\framework\web\CBaseController.php(173): CJuiDateTimePicker->run()
+#2 C:\wamp\www\YiiTraining\protected\views\datetimetest\_form.php(38): CBaseController->widget('CJuiDateTimePic...', Array)
+#3 C:\wamp\www\yiiproject\framework\web\CBaseController.php(126): require('C:\wamp\www\Yii...')
+#4 C:\wamp\www\yiiproject\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\Yii...', Array, true)
+#5 C:\wamp\www\yiiproject\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\Yii...', Array, true)
+#6 C:\wamp\www\YiiTraining\protected\views\datetimetest\create.php(18): CController->renderPartial('_form', Array)
+#7 C:\wamp\www\yiiproject\framework\web\CBaseController.php(126): require('C:\wamp\www\Yii...')
+#8 C:\wamp\www\yiiproject\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\Yii...', Array, true)
+#9 C:\wamp\www\yiiproject\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\Yii...', Array, true)
+#10 C:\wamp\www\yiiproject\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 C:\wamp\www\YiiTraining\protected\controllers\DatetimetestController.php(79): CController->render('create', Array)
+#12 C:\wamp\www\yiiproject\framework\web\actions\CInlineAction.php(49): DatetimetestController->actionCreate()
+#13 C:\wamp\www\yiiproject\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\yiiproject\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\yiiproject\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\yiiproject\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 C:\wamp\www\yiiproject\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\wamp\www\yiiproject\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yiiproject\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\yiiproject\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(282): CController->run('create')
+#22 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('datetimetest/cr...')
+#23 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/YiiTraining/index.php/datetimetest/create
+---
+2014/04/12 05:19:52 [error] [exception.CException] exception 'CException' with message 'Application authorization manager must extend the RDbAuthManager class.' in C:\wamp\www\YiiTraining\protected\modules\rights\components\RInstaller.php:57
+Stack trace:
+#0 C:\wamp\www\yiiproject\framework\base\CModule.php(387): RInstaller->init()
+#1 C:\wamp\www\YiiTraining\protected\modules\rights\RightsModule.php(200): CModule->getComponent('installer')
+#2 C:\wamp\www\YiiTraining\protected\modules\rights\controllers\InstallController.php(29): RightsModule->getInstaller()
+#3 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(281): InstallController->init()
+#4 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('rights')
+#5 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YiiTraining/index.php/rights
+---
+2014/04/12 05:19:56 [error] [exception.CException] exception 'CException' with message 'Application authorization manager must extend the RDbAuthManager class.' in C:\wamp\www\YiiTraining\protected\modules\rights\components\RInstaller.php:57
+Stack trace:
+#0 C:\wamp\www\yiiproject\framework\base\CModule.php(387): RInstaller->init()
+#1 C:\wamp\www\YiiTraining\protected\modules\rights\RightsModule.php(200): CModule->getComponent('installer')
+#2 C:\wamp\www\YiiTraining\protected\modules\rights\controllers\InstallController.php(29): RightsModule->getInstaller()
+#3 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(281): InstallController->init()
+#4 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('rights')
+#5 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YiiTraining/index.php/rights
+---
+2014/04/12 05:59:42 [error] [exception.CException] exception 'CException' with message 'Application authorization manager must extend the RDbAuthManager class.' in C:\wamp\www\YiiTraining\protected\modules\rights\components\RInstaller.php:57
+Stack trace:
+#0 C:\wamp\www\yiiproject\framework\base\CModule.php(387): RInstaller->init()
+#1 C:\wamp\www\YiiTraining\protected\modules\rights\RightsModule.php(200): CModule->getComponent('installer')
+#2 C:\wamp\www\YiiTraining\protected\modules\rights\controllers\InstallController.php(29): RightsModule->getInstaller()
+#3 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(281): InstallController->init()
+#4 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('rights')
+#5 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YiiTraining/index.php/rights
+---
+2014/04/12 06:00:31 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiidatabase.authitem' doesn't exist. The SQL statement executed was: SELECT COUNT(*) FROM AuthItem.
+in C:\wamp\www\YiiTraining\protected\modules\rights\components\RInstaller.php (180)
+in C:\wamp\www\YiiTraining\protected\modules\rights\controllers\InstallController.php (43)
+in C:\wamp\www\YiiTraining\index.php (13)
+2014/04/12 06:00:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in C:\wamp\www\YiiTraining\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 C:\wamp\www\YiiTraining\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 C:\wamp\www\yiiproject\framework\web\CController.php(1144): InstallController->accessRules()
+#2 C:\wamp\www\yiiproject\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 C:\wamp\www\yiiproject\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yiiproject\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\wamp\www\yiiproject\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(282): CController->run('ready')
+#7 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('rights/install/...')
+#8 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/YiiTraining/index.php/rights/install/ready
+---
+2014/04/12 06:00:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in C:\wamp\www\YiiTraining\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 C:\wamp\www\YiiTraining\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 C:\wamp\www\yiiproject\framework\web\CController.php(1144): InstallController->accessRules()
+#2 C:\wamp\www\yiiproject\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 C:\wamp\www\yiiproject\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yiiproject\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\wamp\www\yiiproject\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(282): CController->run('ready')
+#7 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('rights/install/...')
+#8 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/YiiTraining/index.php/rights/install/ready
+---
+2014/04/12 06:00:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in C:\wamp\www\YiiTraining\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 C:\wamp\www\YiiTraining\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 C:\wamp\www\yiiproject\framework\web\CController.php(1144): InstallController->accessRules()
+#2 C:\wamp\www\yiiproject\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 C:\wamp\www\yiiproject\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yiiproject\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\wamp\www\yiiproject\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(282): CController->run('ready')
+#7 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('rights/install/...')
+#8 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/YiiTraining/index.php/rights/install/ready
+---
+2014/04/12 06:00:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in C:\wamp\www\YiiTraining\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 C:\wamp\www\YiiTraining\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 C:\wamp\www\yiiproject\framework\web\CController.php(1144): InstallController->accessRules()
+#2 C:\wamp\www\yiiproject\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 C:\wamp\www\yiiproject\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yiiproject\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\wamp\www\yiiproject\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(282): CController->run('ready')
+#7 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('rights/install/...')
+#8 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/YiiTraining/index.php/rights/install/ready
+---
+2014/04/12 06:00:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in C:\wamp\www\YiiTraining\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 C:\wamp\www\YiiTraining\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 C:\wamp\www\yiiproject\framework\web\CController.php(1144): InstallController->accessRules()
+#2 C:\wamp\www\yiiproject\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 C:\wamp\www\yiiproject\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yiiproject\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\wamp\www\yiiproject\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp\www\yiiproject\framework\web\CWebApplication.php(141): CWebApplication->runController('rights')
+#8 C:\wamp\www\yiiproject\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\YiiTraining\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/YiiTraining/index.php/rights/
+---
